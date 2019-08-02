@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"partials.min.css","sourcesContent":[]}
+{"version":3,"sources":["Partials/ExamplePartial/_resources/styles/_example-styles.scss"],"names":[],"mappings":"AAEA;EACE,yBAAyB;EACzB,aAAa,EAAA","file":"partials.min.css","sourcesContent":["$this: \".example-partial\";\n\n#{$this} {\n  background-color: #efefef;\n  padding: 20px;\n}\n"]}

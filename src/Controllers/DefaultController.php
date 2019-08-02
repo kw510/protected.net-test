@@ -5,7 +5,7 @@ use Generator;
 use Packaged\Routing\Handler\Handler;
 use Packaged\Routing\Route;
 use ProtectedNet\FrontendTest\Layouts\DefaultLayout;
-use ProtectedNet\FrontendTest\Pages\HomePage\HomePage;
+use ProtectedNet\FrontendTest\Pages\ExamplePage\ExamplePage;
 use ProtectedNet\FrontendTestFramework\Controllers\AbstractController;
 
 class DefaultController extends AbstractController
@@ -28,10 +28,9 @@ class DefaultController extends AbstractController
     return 'OK';
   }
 
-  /** @return HomePage */
+  /** @return ExamplePage */
   public function getHomePage()
   {
-    $this->setLayout(new DefaultLayout());
-    return HomePage::i();
+    return ExamplePage::i();
   }
 }
