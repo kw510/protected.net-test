@@ -5,7 +5,7 @@ module.exports = function (gulp, plugins, conf, errorHandler) {
     'global-scss',
     function (done)
     {
-      gulp.src('./src/_assets/styles/tav-global.scss', {"allowEmpty": true})
+      gulp.src('./src/_assets/styles/global.scss', {"allowEmpty": true})
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.sassGlob())
         .pipe(

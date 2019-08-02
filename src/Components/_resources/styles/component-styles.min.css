@@ -1,0 +1,10 @@
+.example-component {
+  border: 1px solid grey; }
+  .example-component__title {
+    font-size: 20px;
+    text-decoration: dashed; }
+  .example-component__highlight {
+    background-color: #cc0000;
+    color: white; }
+  .example-component--hide-ish {
+    opacity: 0.1; }
