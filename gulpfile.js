@@ -23,7 +23,6 @@ require('./gulp/gulp-font')(gulp, plugins, conf, errorHandler);
 require('./gulp/gulp-webpack')(gulp, plugins, conf, errorHandler);
 require('./gulp/gulp-img')(gulp, plugins, conf, errorHandler);
 require('./gulp/gulp-cubex-serve')(gulp, exec, conf, errorHandler);
-require('./gulp/gulp-cubex-serve-development')(gulp, exec, conf, errorHandler);
 require('./gulp/gulp-watcher')(gulp, browserSync, conf, errorHandler);
 require('./gulp/gulp-browser-sync')(gulp, browserSync, conf, errorHandler);
 require('./gulp/gulp-browser-reload')(gulp, browserSync, conf, errorHandler);

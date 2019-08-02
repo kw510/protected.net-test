@@ -2,7 +2,7 @@ module.exports = function (gulp, exec, conf, errorHandler) {
   gulp.task(
     "cubex-serve",
     function (done) {
-      let child = exec("./cubex serve -d -c\"www.totalav\" --port=" + conf.cubex.port);
+      let child = exec("./cubex serve -d -c\"www.frontend-test\" --port=" + conf.cubex.port);
 
       child.stdout.on(
         'data',
