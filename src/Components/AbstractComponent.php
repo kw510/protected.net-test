@@ -16,5 +16,16 @@ abstract class AbstractComponent extends GlobalAbstractComponent
   {
     ResourceManager::componentClass(self::class)->requireCss('styles/component-styles.min.css');
   }
+
+  /**
+   * @param string $imgPath
+   *
+   * @return string|null
+   * @throws Exception
+   */
+  public function getImg(string $imgPath)
+  {
+    return ResourceManager::component($this)->getResourceUri('img/' . $imgPath);
+  }
 }
 

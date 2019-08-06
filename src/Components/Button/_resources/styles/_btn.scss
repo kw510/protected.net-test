@@ -1,0 +1,20 @@
+@import 'base';
+
+$this: ".btn";
+
+#{$this} {
+  background-color: $theme-color-primary;
+  color: white;
+
+  &--ghost {
+    background-color: transparent;
+    border: 1px solid $theme-color-primary;
+    border-radius: 3px;
+    padding: 5px 8px;
+
+    &:hover {
+      background-color: $theme-color-primary;
+      color: white;
+    }
+  }
+}

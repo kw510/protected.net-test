@@ -41,10 +41,6 @@ gulp.task('watch', gulp.parallel('default', 'watcher'));
 // # gulp cubex - Compile then start cubex server
 gulp.task('cubex', gulp.series('default', 'cubex-serve'));
 
-
-// # gulp cubex - Compile then start cubex server
-gulp.task('dev', gulp.series('default', 'cubex-serve-development'));
-
 // # gulp cubex-watch - Compile then start cubex server and watch for changes
 gulp.task('cubex-watch', gulp.series('cubex-serve', 'watch'));
 

@@ -16,4 +16,15 @@ abstract class AbstractPartial extends GlobalAbstractPartial
   {
     ResourceManager::componentClass(self::class)->requireCss('styles/partials.min.css');
   }
+
+  /**
+   * @param string $imgPath
+   *
+   * @return string|null
+   * @throws Exception
+   */
+  public function getImg(string $imgPath)
+  {
+    return ResourceManager::component($this)->getResourceUri('img/' . $imgPath);
+  }
 }
