@@ -1,5 +1,10 @@
-/vendor/
+#Mac Hidden Files
 .DS_Store
+#Idea Project Setup Files
+.idea
+#Idea Module Setup Fil
+*.iml
+/vendor/
 /bower_components/
 /node_modules/
 /resources/

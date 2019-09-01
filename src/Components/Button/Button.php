@@ -17,7 +17,7 @@ class Button extends AbstractComponent
   protected $_content;
 
   /**
-   * Link constructor.
+   * Button constructor.
    *
    * @param string $content
    */
