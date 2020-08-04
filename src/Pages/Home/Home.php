@@ -26,7 +26,7 @@ class Home extends AbstractPage
    */
   public function getIcon(string $icon)
   {
-    return IconWrapper::i(FaIcon::create($icon))->colorLight()->backgroundPrimary()->circle()->sizeX8();
+    return IconWrapper::i(FaIcon::create($icon))->colorLight()->backgroundPrimary()->circle()->sizeX8()->addClass('mb-smo-4');
   }
 
   protected function _getHeroBanner()

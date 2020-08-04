@@ -19,7 +19,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
     </div>
   </div>
 
-  <div class="grid-x about-us-section">
+  <div class="grid-x about-us-section grid-padding-y">
     <div class="cell medium-offset-1 medium-5">
       <?=
       FeatureCard::i()
@@ -28,8 +28,10 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         )
         ->setIcon($this->getIcon(FaIcons::BRIEFCASE))
-        ->textRight(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
-        ->iconRight(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
       ?>
     </div>
     <div class="cell medium-5 end">
@@ -40,8 +42,10 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         )
         ->setIcon($this->getIcon(FaIcons::COMMENTS))
-        ->textLeft(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
-        ->iconLeft(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
       ?>
     </div>
   </div>
