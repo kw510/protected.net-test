@@ -1,13 +1,14 @@
 <?php
 namespace ProtectedNet\FrontendTest\Components\Button;
 
-use Exception;
-use Packaged\Dispatch\ResourceManager;
-use Packaged\SafeHtml\SafeHtml;
 use ProtectedNet\FrontendTest\Components\AbstractComponent;
 
 class Button extends AbstractComponent
 {
+  protected $_iconButton = false;
+  protected $_iconRight = true;
+  protected $_icon;
+
   /**
    * Use this property to set the tag you want to use as your outer element
    *
@@ -28,16 +29,6 @@ class Button extends AbstractComponent
   }
 
   /**
-   * All our styling used BEM, the name you enter here is the root name for BEM styling
-   *
-   * @return string
-   */
-  public function getBlockName(): string
-  {
-    return 'btn';
-  }
-
-  /**
    * We use static i() methods to instantiate as it's shorter and easier to chain
    *
    * @param string $content
@@ -50,13 +41,13 @@ class Button extends AbstractComponent
   }
 
   /**
-   * This method is overridden if you don't require a phtml view
+   * All our styling used BEM, the name you enter here is the root name for BEM styling
    *
-   * @return SafeHtml|string|null
+   * @return string
    */
-  protected function _getContentForRender()
+  public function getBlockName(): string
   {
-    return $this->_content;
+    return 'btn';
   }
 
   /**
@@ -65,5 +56,27 @@ class Button extends AbstractComponent
   public function ghost()
   {
     return $this->_addModifier('ghost');
+  }
+
+  public function iconRight($icon)
+  {
+    $this->_iconButton = true;
+    $this->_iconRight = true;
+    $this->_icon = $icon;
+
+    return $this
+      ->_addModifier('icon')
+      ->_addModifier('icon-right');
+  }
+
+  public function iconLeft($icon)
+  {
+    $this->_iconButton = true;
+    $this->_iconRight = false;
+    $this->_icon = $icon;
+
+    return $this
+      ->_addModifier('icon')
+      ->_addModifier('icon-left');
   }
 }

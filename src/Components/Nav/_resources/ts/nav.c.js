@@ -109,6 +109,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ComponentLoader = exports.AbstractComponent = void 0;
 var AbstractComponent_1 = __webpack_require__(/*! ../../vendor/aktorou/frontend-test-framework/src/Components/AbstractComponent */ "./vendor/aktorou/frontend-test-framework/src/Components/AbstractComponent.ts");
 var AbstractComponent = /** @class */ (function (_super) {
     __extends(AbstractComponent, _super);
@@ -183,6 +184,7 @@ new AbstractComponent_1.ComponentLoader(Nav);
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ComponentLoader = exports.AbstractComponent = void 0;
 var AbstractComponent = /** @class */ (function () {
     function AbstractComponent(componentElement, DI) {
         this.DI = null;

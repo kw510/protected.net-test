@@ -2,9 +2,57 @@
 
 /** @var $this Home */
 
+use PackagedUi\FontAwesome\FaIcon;
+use PackagedUi\FontAwesome\FaIcons;
+use ProtectedNet\FrontendTest\Components\Button\Button;
+use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
+use ProtectedNet\FrontendTest\Components\IconWrapper\IconWrapper;
+use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
 
-<h1>Page content goes here</h1>
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h1 class="mt-10 mb-10">Page content goes here</h1>
+    </div>
+  </div>
+
+  <div class="grid-x about-us-section">
+    <div class="cell medium-offset-1 medium-5">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Feature Card Icons')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::BRIEFCASE))
+        ->textRight(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconRight(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+    <div class="cell medium-5 end">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Loreim ipsum dolor sit amet')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::COMMENTS))
+        ->textLeft(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconLeft(Breakpoints::SMALL(), Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+  </div>
+
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h2 class="mt-10 mb-10">Button examples</h2>
+      <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
+      <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
+    </div>
+  </div>
+</div>
+
 

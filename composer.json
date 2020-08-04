@@ -12,7 +12,9 @@
     }
   },
   "require": {
-    "aktorou/frontend-test-framework": "dev-master"
+    "aktorou/frontend-test-framework": "dev-master",
+    "packaged/enum": "^1.3.1",
+    "packaged-ui/fontawesome": "3.5.*"
   },
   "require-dev": {},
   "autoload": {
@@ -24,6 +26,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:aktorou/frontend-test-framework.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:protectednet/fontawesome.git"
     }
   ]
 }

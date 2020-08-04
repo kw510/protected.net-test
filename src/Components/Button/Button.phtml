@@ -1,0 +1,29 @@
+<?php
+/** @var $this Button */
+use ProtectedNet\FrontendTest\Components\Button\Button;
+?>
+
+
+
+<?php if ($this->_iconButton): ?>
+  <div class="grid-x">
+    <div class="cell auto <?= $this->_iconRight ?: 'small-order-2' ?>">
+      <div class="<?= $this->getElementName('content-holder') ?>">
+        <?= $this->_content ?>
+      </div>
+    </div>
+    <div class="cell shrink <?= $this->_iconRight ?: 'small-order-1' ?>">
+      <div class="<?= $this->getElementName('icon-holder') ?>">
+        <?= $this->_icon ?>
+      </div>
+    </div>
+  </div>
+<?php else: ?>
+  <div class="grid-x">
+    <div class="cell auto">
+      <div class="<?= $this->getElementName('content-holder') ?>">
+        <?= $this->_content ?>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>

@@ -10,6 +10,7 @@ let conf = yaml.load(fs.readFileSync('./gulp/config.yml', 'utf8'));
 let browserSync = require('browser-sync').create();
 let plugins = require('gulp-load-plugins')();
 let exec = require('child_process').exec;
+plugins.sass.compiler = require('dart-sass');
 
 //////////////////////
 // INDIVIDUAL TASKS

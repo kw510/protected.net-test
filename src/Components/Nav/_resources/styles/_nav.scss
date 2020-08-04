@@ -45,6 +45,10 @@ $this: ".nav";
     }
   }
 
+  &__cta {
+    display: flex;
+  }
+
   @include breakpoint(small only) {
     margin-top: 0;
 
