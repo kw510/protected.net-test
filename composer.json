@@ -26,10 +26,6 @@
     {
       "type": "vcs",
       "url": "git@github.com:aktorou/frontend-test-framework.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:protectednet/fontawesome.git"
     }
   ]
 }

@@ -26,7 +26,15 @@ class Home extends AbstractPage
    */
   public function getIcon(string $icon)
   {
-    return IconWrapper::i(FaIcon::create($icon))->colorLight()->backgroundPrimary()->circle()->sizeX8()->addClass('mb-smo-4');
+    // This wouldn't normally be in a variable as it's not needed but throught it was more readable this way
+    $fontawesomeIconComponent = FaIcon::create($icon);
+
+    return IconWrapper::i($fontawesomeIconComponent)
+      ->colorLight()
+      ->backgroundPrimary()
+      ->circle()
+      ->sizeX8()
+      ->addClass('mb-smo-4');
   }
 
   protected function _getHeroBanner()
