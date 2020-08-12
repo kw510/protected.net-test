@@ -9,7 +9,6 @@ use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
-
 <div class="grid-container">
   <div class="grid-x">
     <div class="cell text-center">
@@ -32,6 +31,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
       ?>
     </div>
+    
     <div class="cell medium-5 end">
       <?=
       FeatureCard::i()
@@ -46,17 +46,101 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
         ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
       ?>
     </div>
+
+    <div class="cell medium-offset-1 medium-5">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Feature Card Icons')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::INFO_CIRCLE))
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+
+    <div class="cell medium-5 end">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Loreim ipsum dolor sit amet')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::CHART_LINE))
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+
+    <div class="cell medium-offset-1 medium-5">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Feature Card Icons')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::THUMBS_UP))
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconRight(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
+
+    <div class="cell medium-5 end">
+      <?=
+      FeatureCard::i()
+        ->setTitle('Loreim ipsum dolor sit amet')
+        ->setDescription(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        )
+        ->setIcon($this->getIcon(FaIcons::COG))
+        ->textCenter(Breakpoints::SMALL())
+        ->iconCenter(Breakpoints::SMALL())
+        ->textLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+        ->iconLeft(Breakpoints::MEDIUM(), Breakpoints::LARGE())
+      ?>
+    </div>
   </div>
 </div>
 
 <div class="grid-container">
   <div class="grid-x">
     <div class="cell text-center">
-      <h2 class="mt-10 mb-10">Button examples</h2>
+      <h2 class="mt-10 mb-10">New approach to recruiting</h2>
+      <div>
+        <div class="cell medium-offset-1 medium-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </div>
+        <div class="cell medium-5 end">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h2 class="mt-10 mb-10">Plans and pricing</h2>
       <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
       <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
     </div>
   </div>
 </div>
 
-
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h2 class="mt-10 mb-10">Site Stats</h2>
+      <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
+      <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
+    </div>
+  </div>
+</div>
