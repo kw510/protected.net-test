@@ -13,6 +13,7 @@
     "browser-sync": "^2.26.12",
     "concurrent-transform": "^1.0.0",
     "css-vars-ponyfill": "^1.17.2",
+    "dart-sass": "^1.23.3",
     "flexibility": "^2.0.1",
     "foundation-sites": "^6.6.3",
     "glob": "^7.1.6",
@@ -24,7 +25,6 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.1.0",
-    "dart-sass": "^1.23.3",
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-util": "^3.0.8",
@@ -34,11 +34,13 @@
     "postcss-flexibility": "^2.0.0",
     "slick-carousel": "^1.8.1",
     "ts-loader": "^5.4.5",
+    "ts-node": "^8.10.2",
     "ts-transformer-imports": "^0.2.0",
     "ttypescript": "^1.5.10",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-stream": "^5.2.1",
+    "what-input": "^5.2.10",
     "yargs": "^13.3.2"
   }
 }
