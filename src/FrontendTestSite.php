@@ -48,7 +48,7 @@ class FrontendTestSite extends AbstractFrontendTestSite
           . ";media-src 'self' https://player.vimeo.com https://gcs-vimeo.akamaized.net"
           . ";font-src 'self' https://fonts.gstatic.com https://kit-free.fontawesome.com"
           . ";script-src 'self' 'unsafe-inline' https://kit.fontawesome.com https://fonts.googleapis.com"
-          . ";script-src-elem 'self' 'unsafe-inline' https://kit.fontawesome.com"
+          . ";script-src-elem 'self' 'unsafe-inline' https://kit.fontawesome.com https://fonts.googleapis.com"
         );
       }
     );

@@ -5,6 +5,8 @@
 use PackagedUi\FontAwesome\FaIcons;
 use ProtectedNet\FrontendTest\Components\Button\Button;
 use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
+use ProtectedNet\FrontendTest\Components\Panel\Panel;
+use ProtectedNet\FrontendTest\Components\PricePanel\PricePanel;
 use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
@@ -92,7 +94,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
       ?>
     </div>
 
-    <div class="cell medium-5 end">
+    <div class="cell medium-5 end" style="margin-bottom: 100px;">
       <?=
       FeatureCard::i()
         ->setTitle('Loreim ipsum dolor sit amet')
@@ -109,38 +111,54 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
   </div>
 </div>
 
+
+<?=Panel::i()
+  ->setTitle("New <b>approach</b> to recruiting")
+  ->setRightText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat")
+  ->setLeftText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
+  ->setBackground($this->getImg('background-section.jpg'))
+?>
+
+
 <div class="grid-container">
   <div class="grid-x">
-    <div class="cell text-center">
-      <h2 class="mt-10 mb-10">New approach to recruiting</h2>
-      <div>
-        <div class="cell medium-offset-1 medium-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-        </div>
-        <div class="cell medium-5 end">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    <div class="cell medium-offset-1 text-right medium-3">
+      <h1 class="mt-10 mb-10"><strong>Plans & </strong>pricing</h1>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    </div>
+    <div class="cell text-center medium-8">
+      <div class="grid-container">
+        <div class="grid-x mt-10 mb-10">
+        <div class="cell text-center medium-4 ">
+            <?= PricePanel::i()
+            ->setHeader("Start Up")
+            ->setPrice("$29")
+            ->setDesc("1 job for 30 days")
+            ?>
+          </div>
+          <div class="cell text-center medium-4">
+          <?= PricePanel::i()
+            ->setHeader("Enterprise")
+            ->setPrice("$69")
+            ->setDesc("5 job for 30 days")
+            ?>
+          </div>
+          <div class="cell text-center medium-4">
+          <?= PricePanel::i()
+            ->setHeader("Company")
+            ->setPrice("$329")
+            ->setDesc("2 job for 30 days")
+            ?>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="grid-container">
-  <div class="grid-x">
-    <div class="cell text-center">
-      <h2 class="mt-10 mb-10">Plans and pricing</h2>
-      <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
-      <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
-    </div>
-  </div>
-</div>
-
-<div class="grid-container">
-  <div class="grid-x">
-    <div class="cell text-center">
-      <h2 class="mt-10 mb-10">Site Stats</h2>
-      <?= Button::i('Icon Left Example')->iconLeft("<i class='fa fa-chevron-left'></i>") ?>
-      <?= Button::i('Icon Right Example')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
-    </div>
-  </div>
-</div>
+<?=Panel::i()
+  ->setTitle("Site <b>stats</b>")
+  ->setRightText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat")
+  ->setLeftText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
+  ->setBackground($this->getImg('stats.jpg'))
+?>

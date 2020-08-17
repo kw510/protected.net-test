@@ -1,0 +1,21 @@
+<?php
+/** @var $this Panel */
+use ProtectedNet\FrontendTest\Components\PricePanel\PricePanel;
+use ProtectedNet\FrontendTest\Components\Button\Button;
+?>
+<div style="border: 1px solid #ddd;">
+  <ul class="pricePanel__headerList">
+    <li class="pricePanel__header"><?= $this->getHeader() ?></li>
+    <li class="pricePanel__price"><?= $this->getPrice() ?></li>
+    <li class="pricePanel__desc"><?= $this->getDesc() ?></li>
+  </ul>
+  <ul class="pricePanel__list">
+      <li>One Time Fee</li>
+      <li>Allows 5 Job Postings</li>
+      <li>Highlighted Job Post</li>
+      <li>Posted For 90 Days</li>
+      <li class="grey"><?= Button::i('<strong>Shop now!</strong>')->iconRight("<i class='fa fa-chevron-right'></i>") ?>
+      </li>
+    </ul>
+  </ul>
+</div>

@@ -1,0 +1,23 @@
+<?php
+/** @var $this Panel */
+use ProtectedNet\FrontendTest\Components\Panel\Panel;
+?>
+<div class="panel__background" style="background-image: url('<?= $this->getBackground() ?>');">
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="cell text-center">
+      <h2 class="mt-10 mb-10 panel__title"><?= $this->getTitle() ?></h2>
+    </div>
+  </div>
+
+  <div class="grid-x recruit-section grid-margin-x">
+  
+    <div class="cell  medium-offset-1 medium-5 text-right ">
+      <div class="panel__right"> <?= $this->getRightText() ?> </div>
+    </div>
+    <div class="cell medium-5 text-left ">
+      <div class="panel__left"><?= $this->getLeftText() ?></div>
+    </div>
+  </div>
+</div>
+</div>

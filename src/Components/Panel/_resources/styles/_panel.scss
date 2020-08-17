@@ -1,0 +1,24 @@
+$this: ".panel";
+
+#{$this} {
+  &__right {
+    font-size: 24px;
+    color: #23ba85;
+    margin-bottom: 100px;
+  }
+
+  &__left {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: white;
+  }
+  &__background {
+    background-position: center center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,37 @@
+$this: ".pricePanel";
+
+#{$this} {
+  padding: 5px;
+  &__headerList{
+    list-style-type: none;
+    background-color:#efefef;
+    margin: 0;
+    padding: 25px;
+  }
+  &__list {
+    font-weight: bold;
+    color: white;
+    background-color: #363636;
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  &__list>li {
+        padding-bottom: 10px;
+    }
+  &__header {
+    color: $theme-color-primary;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  &__price {
+    color: #363636;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  &__desc {
+    font-size: 14px;
+  }
+}
