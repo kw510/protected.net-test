@@ -883,11 +883,12 @@
 .pricePanel {
   padding: 5px;
 }
-.pricePanel__headerList {
+.pricePanel__header-list {
   list-style-type: none;
   background-color: #efefef;
   margin: 0;
   padding: 25px;
+  border: 1px solid #ddd;
 }
 .pricePanel__list {
   font-weight: bold;

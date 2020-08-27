@@ -8,6 +8,7 @@ class PricePanel extends AbstractComponent
   protected $_header;
   protected $_price;
   protected $_desc;
+  protected $_list;
 
   public function getHeader()
   {
@@ -37,6 +38,18 @@ class PricePanel extends AbstractComponent
   public function setDesc($desc){
     $this->_desc = $desc;
     return $this;
+  }
+  public function addToList($item){
+    $this->_list .= $item;
+  }
+
+  public function setList($list){
+    $this->_list = join("<li>", $list);
+    return $this;
+  }
+
+  public function getList(){
+    return $this->_list;
   }
 
   /** @return string */

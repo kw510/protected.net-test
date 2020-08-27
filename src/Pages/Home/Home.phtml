@@ -134,20 +134,38 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
             ->setHeader("Start Up")
             ->setPrice("$29")
             ->setDesc("1 job for 30 days")
+            ->setList(["One Time Fee",
+            "Allows 5 Job Postings",
+            "Highlighted Job Post",
+            "Posted For 90 Days",
+            Button::i('<strong>Shop now!</strong>')->iconRight('<i class="fa fa-chevron-right"></i>')]
+            )
             ?>
-          </div>
-          <div class="cell text-center medium-4">
+        </div>
+        <div class="cell text-center medium-4 ">
           <?= PricePanel::i()
             ->setHeader("Enterprise")
             ->setPrice("$69")
             ->setDesc("5 job for 30 days")
+            ->setList(["One Time Fee",
+            "Allows 5 Job Postings",
+            "Highlighted Job Post",
+            "Posted For 90 Days",
+            Button::i('<strong>Shop now!</strong>')->iconRight('<i class="fa fa-chevron-right"></i>')]
+            )
             ?>
           </div>
-          <div class="cell text-center medium-4">
+          <div class="cell text-center medium-4 ">
           <?= PricePanel::i()
             ->setHeader("Company")
             ->setPrice("$329")
             ->setDesc("2 job for 30 days")
+            ->setList(["One Time Fee",
+            "Allows 5 Job Postings",
+            "Highlighted Job Post",
+            "Posted For 90 Days",
+            Button::i('<strong>Shop now!</strong>')->iconRight('<i class="fa fa-chevron-right"></i>')]
+            )
             ?>
           </div>
         </div>

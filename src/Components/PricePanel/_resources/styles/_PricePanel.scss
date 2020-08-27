@@ -1,12 +1,15 @@
 $this: ".pricePanel";
 
 #{$this} {
+  
   padding: 5px;
-  &__headerList{
+  
+  &__header-list{
     list-style-type: none;
     background-color:#efefef;
     margin: 0;
     padding: 25px;
+    border: 1px solid #ddd;
   }
   &__list {
     font-weight: bold;
