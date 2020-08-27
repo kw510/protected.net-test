@@ -2,6 +2,7 @@
 namespace ProtectedNet\FrontendTest\Components\Panel;
 
 use ProtectedNet\FrontendTest\Components\AbstractComponent;
+use ProtectedNet\FrontendTest\Enum\Breakpoints;
 
 class Panel extends AbstractComponent
 {
@@ -84,6 +85,7 @@ class Panel extends AbstractComponent
   {
     return 'panel';
   }
+
 
   /** @return $this */
   public static function i()
