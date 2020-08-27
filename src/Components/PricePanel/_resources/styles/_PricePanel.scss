@@ -5,6 +5,7 @@ $this: ".pricePanel";
   padding: 5px;
   font-family: Raleway;
   
+  
   &__header-list{
     list-style-type: none;
     background-color:#efefef;
@@ -13,7 +14,7 @@ $this: ".pricePanel";
     border: 1px solid #ddd;
   }
   &__list {
-    font-weight: bold;
+    font-weight: 600;
     color: white;
     background-color: #363636;
     list-style-type: none;
@@ -27,7 +28,8 @@ $this: ".pricePanel";
     }
   &__header {
     color: $theme-color-primary;
-    font-weight: bold;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
     font-size: xx-large;
   }
   &__price {
