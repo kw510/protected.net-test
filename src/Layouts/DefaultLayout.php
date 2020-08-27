@@ -15,6 +15,8 @@ class DefaultLayout extends GlobalDefaultLayout
     ResourceManager::resources()->requireCss('styles/global.min.css', null, 20);
     ResourceManager::resources()->requireJs('js/libraries.min.js', null, 20);
     ResourceManager::external()->requireJs('https://kit.fontawesome.com/a076d05399.js');
+    ResourceManager::external()->requireCss('https://fonts.googleapis.com/css?family=Lato:400,600,900');
+    ResourceManager::external()->requireCss('https://fonts.googleapis.com/css?family=Raleway:400,600,900');
   }
 
   protected function _getNav()

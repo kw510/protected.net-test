@@ -3,6 +3,7 @@ $this: ".pricePanel";
 #{$this} {
   
   padding: 5px;
+  font-family: Raleway;
   
   &__header-list{
     list-style-type: none;
@@ -22,7 +23,7 @@ $this: ".pricePanel";
     transition: 0.3s;
   }
   &__list>li {
-        padding-bottom: 10px;
+      padding-bottom: 10px;
     }
   &__header {
     color: $theme-color-primary;
