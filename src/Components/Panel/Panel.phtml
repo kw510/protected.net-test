@@ -2,7 +2,9 @@
 /** @var $this Panel */
 use ProtectedNet\FrontendTest\Components\Panel\Panel;
 ?>
+<?php if($this->getElementName('background')): ?>
 <div class="<?= $this->getElementName('background') ?>" style="background-image: url('<?= $this->getBackground() ?>');">
+<?php endif; ?>
 <div class="grid-container">
   <div class="grid-x">
     <div class="cell text-center">
@@ -10,14 +12,19 @@ use ProtectedNet\FrontendTest\Components\Panel\Panel;
     </div>
   </div>
 
-  <div class="grid-x recruit-section grid-margin-x">
-  
-    <div class="cell  medium-offset-1 medium-5 ">
-      <div class="<?= $this->getElementName('right') ?>"> <?= $this->getRightText() ?> </div>
-    </div>
+  <div class="grid-x grid-margin-x">
+    <?php if($this->getElementName('right')): ?>
+      <div class="cell  medium-offset-1 medium-5 ">
+        <div class="<?= $this->getElementName('right') ?>"> <?= $this->getRightText() ?> </div>
+      </div>
+    <?php endif; ?>
+    <?php if($this->getElementName('left')): ?>
     <div class="cell medium-5 ">
       <div class="<?= $this->getElementName('left') ?>"><?= $this->getLeftText() ?></div>
     </div>
+    <?php endif; ?>
   </div>
 </div>
+<?php if($this->getElementName('background')): ?>
 </div>
+<?php endif; ?>
