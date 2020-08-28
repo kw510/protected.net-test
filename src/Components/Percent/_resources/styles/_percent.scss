@@ -1,0 +1,36 @@
+$this: ".percent";
+
+#{$this} {
+    display: block;
+    margin: auto;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  &__circle {
+    stroke: #4CC790;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: square;
+    animation: progress 1s ease-out forwards;
+  }
+  &__circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 2;
+  }
+
+  &__percentage {
+    fill: $theme-color-primary;
+    font-family: Raleway, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-anchor: middle;
+  }
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+}

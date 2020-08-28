@@ -1,7 +1,6 @@
 $this: ".panel";
 
 #{$this} {
-  font-weight: 600;
   
   &__right {
     font-size: 22px;
@@ -10,6 +9,7 @@ $this: ".panel";
     color: #23ba85;
     text-align: right;
     padding-bottom: 3px;
+    font-weight: 600;
   }
 
   &__left {
@@ -19,6 +19,7 @@ $this: ".panel";
     color: white;
     text-align: left;
     padding-bottom: 24px;
+    font-weight: 600;
   }
 
   &__title {

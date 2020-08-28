@@ -14,3 +14,14 @@ strong {
   font-family: Raleway;
   font-size: 4rem;
 }
+
+.stats-section {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+.stats-section h1 {
+  color: white;
+  font-family: Raleway;
+  font-size: 4rem;
+}

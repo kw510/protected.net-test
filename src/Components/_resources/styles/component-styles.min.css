@@ -861,9 +861,6 @@
   }
 }
 
-.panel {
-  font-weight: 600;
-}
 .panel__right {
   font-size: 22px;
   line-height: 37px;
@@ -871,6 +868,7 @@
   color: #23ba85;
   text-align: right;
   padding-bottom: 3px;
+  font-weight: 600;
 }
 .panel__left {
   font-size: 14px;
@@ -879,6 +877,7 @@
   color: white;
   text-align: left;
   padding-bottom: 24px;
+  font-weight: 600;
 }
 .panel__title {
   font-size: 60px;
@@ -901,6 +900,126 @@
   .panel__left {
     text-align: center;
     padding-bottom: 12px;
+  }
+}
+
+.percent {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.percent__circle {
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: square;
+  animation: progress 1s ease-out forwards;
+}
+.percent__circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2;
+}
+.percent__percentage {
+  fill: #23ba85;
+  font-family: Raleway, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-anchor: middle;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.percent-card__icon {
+  padding: 0 10px;
+}
+.percent-card__title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+}
+.percent-card__subtitle {
+  font-size: 16px;
+  color: white;
+  font-family: Lato, sans-serif;
+}
+.percent-card__description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
+@media print, screen and (max-width: 39.99875em) {
+  .percent-card--small-icon-left {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+  .percent-card--medium-icon-left {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .percent-card--large-icon-left {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media print, screen and (max-width: 39.99875em) {
+  .percent-card--small-icon-right {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+  .percent-card--medium-icon-right {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .percent-card--large-icon-right {
+    -js-display: flex;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media print, screen and (max-width: 39.99875em) {
+  .percent-card--small-icon-center {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media print, screen and (min-width: 40em) and (max-width: 63.99875em) {
+  .percent-card--medium-icon-center {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media print, screen and (min-width: 64em) {
+  .percent-card--large-icon-center {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
   }
 }
 

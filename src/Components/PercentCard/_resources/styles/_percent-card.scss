@@ -1,0 +1,49 @@
+@import "base";
+
+$this: ".percent-card";
+
+#{$this} {
+  &__icon {
+    padding: 0 10px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom:10px ;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: white;
+    font-family: Lato, sans-serif;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+  }
+
+  @include breakpoint-component('icon-left') {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include breakpoint-component('icon-right') {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @include breakpoint-component('icon-center') {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
