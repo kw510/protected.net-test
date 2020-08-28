@@ -7,7 +7,6 @@ use ProtectedNet\FrontendTest\Components\Button\Button;
 use ProtectedNet\FrontendTest\Components\FeatureCard\FeatureCard;
 use ProtectedNet\FrontendTest\Components\Panel\Panel;
 use ProtectedNet\FrontendTest\Components\PricePanel\PricePanel;
-use ProtectedNet\FrontendTest\Components\Percent\Percent;
 use ProtectedNet\FrontendTest\Components\PercentCard\PercentCard;
 use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
@@ -124,15 +123,15 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 <div class="grid-container plans-and-pricing">
   <div class="grid-x">
-    <div class="cell medium-offset-1 medium-3 ">
-      <h1 class="mt-10 mb-10 plans-and-pricing_title"><strong>Plans & </strong>pricing</h1>
-      <div class="plans-and-pricing_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
+    <div class="cell large-text-right large-offset-1 large-3 medium-12 text-center">
+      <h1 class="mt-10 mb-10"><strong>Plans & </strong>pricing</h1>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
     </div>
     
-    <div class="cell text-center medium-8">
+    <div class="cell text-center large-8 medium-12">
       <div class="grid-container">
         <div class="grid-x mt-10 mb-10">
-        <div class="cell text-center medium-4 ">
+        <div class="cell text-center large-4 medium-4">
             <?= PricePanel::i()
             ->setHeader("Start Up")
             ->setPrice("$29")
@@ -145,7 +144,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
             )
             ?>
         </div>
-        <div class="cell text-center medium-4 ">
+        <div class="cell text-center large-4 medium-4">
           <?= PricePanel::i()
             ->setHeader("Enterprise")
             ->setPrice("$69")
@@ -158,7 +157,7 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
             )
             ?>
           </div>
-          <div class="cell text-center medium-4 ">
+          <div class="cell text-center large-4 medium-4">
           <?= PricePanel::i()
             ->setHeader("Company")
             ->setPrice("$329")

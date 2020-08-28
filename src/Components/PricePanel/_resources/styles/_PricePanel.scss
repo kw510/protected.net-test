@@ -2,7 +2,7 @@ $this: ".pricePanel";
 
 #{$this} {
   
-  padding: 5px;
+  padding: 10px;
   font-family: Raleway;
   
   
@@ -29,7 +29,7 @@ $this: ".pricePanel";
   &__header {
     color: $theme-color-primary;
     font-family: Lato, sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-size: xx-large;
   }
   &__price {

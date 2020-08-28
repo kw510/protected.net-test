@@ -1024,7 +1024,7 @@
 }
 
 .pricePanel {
-  padding: 5px;
+  padding: 10px;
   font-family: Raleway;
 }
 .pricePanel__header-list {
@@ -1050,7 +1050,7 @@
 .pricePanel__header {
   color: #23ba85;
   font-family: Lato, sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   font-size: xx-large;
 }
 .pricePanel__price {
