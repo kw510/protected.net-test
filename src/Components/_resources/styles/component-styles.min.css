@@ -867,7 +867,7 @@
   font-family: Lato, sans-serif;
   color: #23ba85;
   text-align: right;
-  padding-bottom: 3px;
+  padding-bottom: 4rem;
   font-weight: 600;
 }
 .panel__left {
@@ -876,7 +876,7 @@
   font-family: Raleway, sans-serif;
   color: white;
   text-align: left;
-  padding-bottom: 24px;
+  padding-bottom: 4rem;
   font-weight: 600;
 }
 .panel__title {
@@ -895,11 +895,11 @@
   }
   .panel__right {
     text-align: center;
-    padding-bottom: 12px;
+    padding-bottom: 1rem;
   }
   .panel__left {
     text-align: center;
-    padding-bottom: 12px;
+    padding-bottom: 4rem;
   }
 }
 
