@@ -865,20 +865,20 @@
   font-weight: 600;
 }
 .panel__right {
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 22px;
+  line-height: 37px;
   font-family: Lato, sans-serif;
   color: #23ba85;
   text-align: right;
   padding-bottom: 3px;
 }
 .panel__left {
-  font-size: 11.7px;
+  font-size: 14px;
   line-height: 20px;
   font-family: Raleway, sans-serif;
   color: white;
   text-align: left;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
 }
 .panel__title {
   font-size: 60px;
@@ -887,23 +887,18 @@
 }
 .panel__background {
   width: 100%;
-  background-position: center center;
+  background-position: right top;
   background-size: cover;
 }
 @media print, screen and (max-width: 39.99875em) {
   .panel__title {
-    font-size: 30px;
-    margin-top: 170px;
+    font-size: 60px;
   }
   .panel__right {
-    font-size: 20px;
-    color: #23ba85;
     text-align: center;
     padding-bottom: 12px;
   }
   .panel__left {
-    font-size: 14px;
-    color: white;
     text-align: center;
     padding-bottom: 12px;
   }

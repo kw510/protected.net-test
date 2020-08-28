@@ -11,14 +11,14 @@ use ProtectedNet\FrontendTest\Enum\Breakpoints;
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
-<div class="grid-container">
+<div class="grid-container about-us-section">
   <div class="grid-x">
     <div class="cell text-center">
-      <h1 class="mt-10 mb-10"><strong>About</strong> Us</h1>
+      <h1 class="mt-10 mb-10 "><strong>About</strong> Us</h1>
     </div>
   </div>
 
-  <div class="grid-x about-us-section grid-padding-y">
+  <div class="grid-x  grid-padding-y">
     <div class="cell medium-offset-1 medium-5">
       <?=
       FeatureCard::i()
@@ -120,12 +120,13 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
 ?>
 
 
-<div class="grid-container">
+<div class="grid-container plans-and-pricing">
   <div class="grid-x">
-    <div class="cell medium-offset-1 text-right medium-3">
-      <h1 class="mt-10 mb-10"><strong>Plans & </strong>pricing</h1>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    <div class="cell medium-offset-1 medium-3 ">
+      <h1 class="mt-10 mb-10 plans-and-pricing_title"><strong>Plans & </strong>pricing</h1>
+      <div class="plans-and-pricing_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</div>
     </div>
+    
     <div class="cell text-center medium-8">
       <div class="grid-container">
         <div class="grid-x mt-10 mb-10">
@@ -180,3 +181,4 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
   ->setLeftText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
   ->setBackground($this->getImg('stats.jpg'))
 ?>
+

@@ -1,7 +1,16 @@
+strong {
+  font-weight: 900;
+}
+
 .about-us-section .icon-wrapper i {
   font-size: 30px;
 }
+.about-us-section h1 {
+  font-family: Lato;
+  font-size: 4rem;
+}
 
-strong {
-  font-weight: 900;
+.plans-and-pricing h1 {
+  font-family: Raleway;
+  font-size: 4rem;
 }
